@@ -1,0 +1,67 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- pybo CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <!-- main CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+    <title>Hello, JiJeong!</title>
+</head>
+<body>
+<div class="bg">
+      <div class="pd">
+        <div class="header_area">
+            <h1 class="logo_area">
+        <div class="logo">
+            <a href="#">
+            <img src="{% static 'img/logo2.png' %}">
+            </a>
+        </div>
+         <h1 class="logoarea">
+         <div class="logo_1">
+            <a href="#">
+            <img src="{% static 'img/logo1.png' %}">
+            </a>
+        </div>
+        </h1>
+        </div>
+    </div>
+</div>
+{% include "navbar.html" %}
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+
+
+        <div class="create_area">
+        <a href="http://127.0.0.1:8000/pybo/question/create/">
+            <div class="create">
+                <img src="{% static 'img/phone.png' %}">
+                <div class="product1">
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>QR코드 생성</b>
+                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 생활용품에 부착할 <br>&nbsp&nbsp QR코드를 생성해보세요!
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="create_1">
+                <img src="{% static 'img/hed.png' %}">
+                <div class="product_1">
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>문의하기</b>
+                </div>
+            </div>
+        </a>
+        </div>
+</body>
+</html>
+{% block content %}
+{% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+<!-- jQuery JS -->
+<script src="{% static 'jquery-3.4.1.min.js' %}"></script>
+<!-- Bootstrap JS -->
+<script src="{% static 'bootstrap.min.js' %}"></script>
